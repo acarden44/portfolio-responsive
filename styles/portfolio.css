@@ -1,16 +1,84 @@
 body {
-  background-color: aqua;
-}
-h1 {
+  margin: 0;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  background-color: #f7f6fd;
+  color: #222;
+  text-align: center;
+  padding: 4rem 1rem;
 }
-p {
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ded4f8;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wave {
+  font-size: 2rem;
+}
+
+.name {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  background-color: #6f6acc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4c46c7;
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+  }
+
+  .wave {
+    font-size: 1.5rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
 }
