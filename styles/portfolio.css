@@ -1,42 +1,63 @@
+:root {
+  --branding-color: #6f6acc;
+  --secondary-color: #ded4f8;
+  --text-color: #222;
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --btn-hover: #4c46c7;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f7f6fd;
-  color: #222;
+  font-family: var(--body-font);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   text-align: center;
   padding: 4rem 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: black;
+  font-weight: 800;
+  margin: 0;
 }
 
 .hero {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #ded4f8;
-  padding: 3rem 2rem;
-  border-radius: 20px;
+  padding: 4rem 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 64px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 1rem 0 2rem;
 }
 
 .wave {
   font-size: 2rem;
 }
 
-.name {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin: 0.5rem 0;
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
 .contact-button {
-  background-color: #6f6acc;
+  background-color: var(--branding-color);
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -44,31 +65,31 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #4c46c7;
+  background-color: var(--btn-hover);
 }
 
 @media (max-width: 768px) {
-  .name {
-    font-size: 2.5rem;
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .contact-button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.95rem;
-  }
-
-  .hero {
-    padding: 2rem 1rem;
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .name {
-    font-size: 2rem;
+  .hero {
+    padding: 2rem 1rem;
   }
 
   .wave {
@@ -78,7 +99,5 @@ body {
   .contact-button {
     width: 100%;
     max-width: 300px;
-    display: block;
-    margin: 0 auto;
   }
 }
