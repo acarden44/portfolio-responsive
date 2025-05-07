@@ -1,0 +1,68 @@
+:root {
+  --branding-color: #6f6acc;
+  --hover-color: #4c46c7;
+  --background-color: #f5f3ff;
+  --text-color: #222;
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: #333;
+}
+
+.about-section {
+  padding: 60px 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--branding-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
+/* Responsive text tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .profile-image img {
+    margin-top: 30px;
+  }
+}
